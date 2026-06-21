@@ -90,7 +90,6 @@ motel-management-system/
 │   └── index.html
 ├── database/              # Contains the script file (.sql) to initialize the DB
 ├── assets/                # Project illustration images
-├── Report OOAD MotelMS_2.pdf # System analysis and design documentation
 └── README.md
 ```
 
