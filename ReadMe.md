@@ -7,7 +7,7 @@
 
 A comprehensive Web-based system designed to digitize and automate the operation and management of motels. This project was built from scratch by strictly applying **Object-Oriented Analysis and Design (OOAD)** principles, from requirements gathering and UML modeling to the actual source code deployment.
 
-**[Đọc Báo Cáo Phân Tích Thiết Kế OOAD Chi Tiết (Bản PDF)](https://drive.google.com/file/d/1vMf_tv0G1zyiJEI4u2CPd-BA9_GxXqeg/view?usp=sharing)**
+**[Read the Detailed OOAD Design Analysis Report (PDF)](https://drive.google.com/file/d/1vMf_tv0G1zyiJEI4u2CPd-BA9_GxXqeg/view?usp=sharing)**
 
 ---
 
@@ -88,4 +88,4 @@ motel-management-system/
 ├── Report OOAD MotelMS_2.pdf # System analysis and design documentation
 └── README.md
 
-Feel free to reach out via truongxuan2834@gmail.com for any discussion regarding this project.
+Feel free to reach out via [truongxuan2834@gmail.com](truongxuan2834@gmail.com) for any discussion regarding this project.
