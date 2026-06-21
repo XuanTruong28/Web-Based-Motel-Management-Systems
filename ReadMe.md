@@ -62,7 +62,7 @@ This project was developed to consolidate and demonstrate the core skills of a S
 1. Open your Terminal and navigate to the backend directory: `cd backend`
 2. Install the required dependencies: `npm install`
 3. Start the Server: `nodemon src/server.js` (or `npx nodemon src/server.js`)
-4. The setup is complete when the Terminal displays: **"Kết nối SQL Server thành công"** (SQL Server connection successful).
+4. The setup is complete when the Terminal displays: **"SQL Server connection successful"**.
 
 ### 4. Frontend Setup
 1. Install the **Live Server** Extension in VS Code.
