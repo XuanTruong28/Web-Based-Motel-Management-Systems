@@ -1,62 +1,91 @@
-# **Hệ Thống Quản Lý Nhà Trọ \- MotelMS**
+# Motel Management System (MotelMS)
 
-Hệ thống quản lý nhà trọ thông minh hỗ trợ chủ trọ quản lý phòng, khách thuê, hóa đơn điện nước và hợp đồng một cách tự động và hiện đại.
+![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge)
+![SQL Server](https://img.shields.io/badge/SQL_Server-CC292B?style=for-the-badge&logo=microsoft-sql-server&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## **Yêu Cầu Cài Đặt**
+A comprehensive Web-based system designed to digitize and automate the operation and management of motels. This project was built from scratch by strictly applying **Object-Oriented Analysis and Design (OOAD)** principles, from requirements gathering and UML modeling to the actual source code deployment.
 
-Trước khi bắt đầu, hãy đảm bảo máy tính của bạn đã cài đặt:
+**[Đọc Báo Cáo Phân Tích Thiết Kế OOAD Chi Tiết (Bản PDF)](https://drive.google.com/file/d/1vMf_tv0G1zyiJEI4u2CPd-BA9_GxXqeg/view?usp=sharing)**
 
-* [Node.js](https://nodejs.org/) (Phiên bản mới nhất)  
-* [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) (Express hoặc bản đầy đủ)  
-* [VS Code](https://code.visualstudio.com/) kèm Extension **Live Server**.
+---
 
-## ** Hướng Dẫn Thiết Lập**
+## 📸 System UI (Visuals)
 
-### **1\. Cấu hình Cơ sở dữ liệu (SQL Server)**
+*(Dashboard Overview and Revenue Monitoring)*
+![Dashboard Overview](assets/dashboard.png)
 
-1. Mở **SQL Server Management Studio (SSMS)** và kết nối vào Server của bạn.  
-2. **Tạo Login mới:**  
-   * Vào mục `Security` \-\> Chuột phải `Logins` \-\> `New Login`.  
-   * Tên tài khoản: `motel_app`.  
-   * Mật khẩu: `12345`.  
-   * Tại mục `Status`, đảm bảo đã chọn **Enabled** cho *Login* và **Grant** cho *Permission to connect*.  
-3. **Khởi tạo Database:**  
-   * Tạo một Database mới tên là `quanlytro`.  
-   * Mở file SQL đính kèm trong thư mục `database` của dự án.  
-   * Copy toàn bộ nội dung code SQL, dán vào **New Query** và nhấn **Execute**.  
-4. **Cấp quyền:**  
-   * Liên kết tài khoản `motel_app` với database `quanlytro`.  
-   * Tại mục `User Mapping`, chọn database `quanlytro` và tích chọn quyền `db_owner`.
+*(Login and Accommodation Contract Management)*
+![Login and Contract Management](assets/login.png)
 
-### **2\. Cài đặt và Chạy Backend**
+---
 
-1. Mở thư mục dự án bằng **Visual Studio Code**.  
-2. Mở Terminal tại thư mục `backend` (Chuột phải vào folder `backend` \-\> `Open in Integrated Terminal`).
+## Project Goals & Applied Skills (For Recruiters)
+This project was developed to consolidate and demonstrate the core skills of a Software Engineer Intern:
+* **System Design:** Applied UML (Use Case, Activity, Sequence, Class Diagram) to extensively model the system before coding.
+* **RESTful API Development:** Built standard REST APIs using Node.js and Express to efficiently manage data flow between the Client and Server.
+* **Database Management:** Designed a normalized Relational Database Schema (RDBMS) on SQL Server, ensured data integrity (Constraints, Foreign Keys), and wrote complex queries for invoice calculations and statistics.
+* **Problem Solving:** Developed algorithms for the automatic calculation of electricity and water costs based on monthly consumption differences and managed real-time room statuses.
 
-3. **Cài đặt thư viện:** Nhập lệnh sau để tải các gói phụ thuộc:  
-   Bash  
-   npm install
+---
 
-4. **Khởi chạy Server:** Nhập lệnh để chạy backend bằng nodemon:  
-   Bash  
-   nodemon src/server.js  
-   *Lưu ý: Nếu chưa cài nodemon toàn cục, bạn có thể dùng `npx nodemon src/server.js`.*  
-5. Khi thấy thông báo **"Kết nối SQL Server thành công"**, backend đã sẵn sàng.
+## Key Features
+* **Accommodation Management (Core Module):** Visual management of room statuses (Available, Occupied, Under Maintenance). Managed the contract lifecycle from creation to liquidation.
+* **Financial Automation:** Automatically calculates room rent and service costs (electricity, water, garbage, Wi-Fi) based on finalized monthly utility readings.
+* **Statistical Dashboard:** An overview interface for real-time tracking of occupancy rates, total revenue, and lists of tenants with outstanding payments.
 
-### **3\. Khởi chạy Giao diện (Frontend)**
+---
 
-1. Tìm đến file `index.html` (thường nằm trong thư mục gốc hoặc folder `frontend`).  
-2. Chuột phải vào file `index.html` và chọn **Open with Live Server**.  
-3. Trình duyệt sẽ tự động mở trang web. Bây giờ bạn có thể bắt đầu sử dụng hệ thống.
+## Architecture & Technologies
+* **Architecture Pattern:** Client-Server (Monolithic Architecture)
+* **Frontend:** HTML5, CSS3, JavaScript (Vanilla) - Interacts with the server via Fetch API.
+* **Backend:** Node.js, Express.js.
+* **Database:** Microsoft SQL Server (Connected via the `mssql` library).
 
-## **Cấu Trúc Thư Mục Chính**
+---
 
-* `/frontend`: Chứa toàn bộ giao diện HTML, CSS và logic JavaScript xử lý phía người dùng.  
-* `/backend`: Chứa API Node.js, cấu hình kết nối SQL Server và xử lý nghiệp vụ.  
-* `/database`: Chứa file script `.sql` để khởi tạo cấu trúc bảng và dữ liệu mẫu.
+## Installation Guide (Local Environment)
 
-## **Lưu Ý**
+### 1. System Requirements
+* [Node.js](https://nodejs.org/) (LTS Version)
+* [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) & [SSMS](https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
 
-* Đảm bảo SQL Server đang chạy và cho phép kết nối bằng tài khoản SQL (SQL Server Authentication).  
-* Nếu thay đổi cổng (port) của Backend, hãy cập nhật lại biến `API_URL` trong các file JavaScript ở Frontend.
+### 2. Database Initialization
+1. Open SSMS and create a new Login account:
+   * Username: `motel_app` | Password: `12345` (Select *SQL Server Authentication*, Status: *Enabled* & *Grant*).
+2. Create a new database named `quanlytro`.
+3. Open the script file in the `database/` folder, copy all the code, and **Execute** it within the `quanlytro` database to generate the table structures and sample data.
+4. In the `User Mapping` section of the `motel_app` account, grant the `db_owner` role for the `quanlytro` database.
 
+### 3. Backend Setup
+1. Open your Terminal and navigate to the backend directory: `cd backend`
+2. Install the required dependencies: `npm install`
+3. Start the Server: `nodemon src/server.js` (or `npx nodemon src/server.js`)
+4. The setup is complete when the Terminal displays: **"Kết nối SQL Server thành công"** (SQL Server connection successful).
+
+### 4. Frontend Setup
+1. Install the **Live Server** Extension in VS Code.
+2. Right-click the `frontend/index.html` file -> Select **Open with Live Server**.
+3. The system will automatically launch in your default web browser.
+
+---
+
+## Source Code Structure
+```text
+motel-management-system/
+├── backend/               # API logic and Database connection configurations
+│   ├── src/
+│   │   ├── controllers/   # Business logic handling for each module
+│   │   ├── routes/        # API Endpoints routing
+│   │   └── server.js      # Entry point to start the server
+├── frontend/              # User Interface
+│   ├── css/
+│   ├── js/                # Logic for API calls and DOM manipulation
+│   └── index.html
+├── database/              # Contains the script file (.sql) to initialize the DB
+├── assets/                # Project illustration images
+├── Report OOAD MotelMS_2.pdf # System analysis and design documentation
+└── README.md
+
+Feel free to reach out via truongxuan2834@gmail.com for any discussion regarding this project.
