@@ -14,10 +14,10 @@ A comprehensive Web-based system designed to digitize and automate the operation
 ## 📸 System UI (Visuals)
 
 *(Dashboard Overview and Revenue Monitoring)*
-![Dashboard Overview](assets/dashboard.png)
+![Dashboard Overview](fronted/assets/dashboard.png)
 
 *(Login and Accommodation Contract Management)*
-![Login and Contract Management](assets/login.png)
+![Login and Contract Management](fronted/assets/login.png)
 
 ---
 
