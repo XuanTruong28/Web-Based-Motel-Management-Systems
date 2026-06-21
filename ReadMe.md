@@ -14,10 +14,10 @@ A comprehensive Web-based system designed to digitize and automate the operation
 ## 📸 System UI (Visuals)
 
 *(Dashboard Overview and Revenue Monitoring)*
-![Dashboard Overview](frontend/assets/dashboard.png)
+![Dashboard Overview](frontend/assets/images/dashboard.png)
 
 *(Login and Accommodation Contract Management)*
-![Login and Contract Management](frontend/assets/login.png)
+![Login and Contract Management](frontend/assets/images/login.png)
 
 ---
 
@@ -87,6 +87,8 @@ motel-management-system/
 ├── assets/                # Project illustration images
 ├── Report OOAD MotelMS_2.pdf # System analysis and design documentation
 └── README.md
----
+```
 
 *Feel free to reach out via [truongxuan2834@gmail.com](mailto:truongxuan2834@gmail.com) for any discussion regarding this project.*
+
+
