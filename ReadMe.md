@@ -21,7 +21,7 @@ A comprehensive Web-based system designed to digitize and automate the operation
 
 *(Room Status & Operations Overview)*
 
-![Room Status Overview](frontend/assets/images/summary.png)
+![Room Status Overview](frontend/assets/images/ary.png)
 
 ---
 
