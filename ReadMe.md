@@ -87,5 +87,6 @@ motel-management-system/
 ├── assets/                # Project illustration images
 ├── Report OOAD MotelMS_2.pdf # System analysis and design documentation
 └── README.md
+---
 
 *Feel free to reach out via [truongxuan2834@gmail.com](mailto:truongxuan2834@gmail.com) for any discussion regarding this project.*
