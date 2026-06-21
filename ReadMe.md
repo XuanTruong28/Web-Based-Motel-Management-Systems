@@ -19,9 +19,10 @@ A comprehensive Web-based system designed to digitize and automate the operation
 *(Login and Accommodation Contract Management)*
 ![Login and Contract Management](frontend/assets/images/login.png)
 
+
 *(Room Status & Operations Overview)*
 
-![Room Status Overview](frontend/assets/images/ary.png)
+![Room Status Overview](frontend/assets/images/summary.png)
 
 ---
 
